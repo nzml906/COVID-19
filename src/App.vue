@@ -156,7 +156,9 @@ export default {
   },
 
   async created() {
-    const { data } = await axios.get("https://covidtracking.com/api/us/daily");
+    const { data } = await axios.get(
+      "https://covidtracking.com/api/v1/us/daily.json"
+    );
 
     // console.log(data);
     // console.log(typeof data);
